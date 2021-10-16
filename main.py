@@ -56,11 +56,8 @@ class Audio:
         except:
             pass
 
-        new_caption = '''🏷 **Title**: `{0}`
-👤 **Artist**: `{1}`
-💽 **Album:**  `{2}`
-🎼 Genre: {3}
-📥 **Asanga Udara**'''.format(title, artist, album, genre)
+        new_caption = '''💽 *Album:*  `{2}`
+📥 *Asanga Udara*'''.format(title, artist, album, genre)
 
         self.bot.edit_message_caption(chat_id=self.chat_id, message_id=self.message_id, caption=new_caption, parse_mode='Markdown',)
         logging.log(logging.INFO, "Caption changed")
