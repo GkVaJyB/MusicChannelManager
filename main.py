@@ -27,7 +27,6 @@ class Audio:
         new_file = self.bot.get_file(file_id)
 
         logging.log(logging.INFO, "Downloading file")
-        self.bot.edit_message_caption(chat_id=self.chat_id, message_id=self.message_id, caption="downloading...")
 
         new_file.download('file.mp3')
         logging.log(logging.INFO, "File downloaded")
