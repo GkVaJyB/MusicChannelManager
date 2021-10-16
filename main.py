@@ -62,7 +62,7 @@ class Audio:
 🎼 Genre: {3}
 📥 **Asanga Udara**'''.format(title, artist, album, genre)
 
-        self.bot.edit_message_caption(chat_id=self.chat_id, message_id=self.message_id, caption=new_caption)
+        self.bot.edit_message_caption(chat_id=self.chat_id, message_id=self.message_id, caption=new_caption, parse_mode=telegram.ParseMode.MARKDOWN)
         logging.log(logging.INFO, "Caption changed")
 
 
