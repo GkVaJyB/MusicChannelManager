@@ -2,6 +2,7 @@ from telegram.ext import Updater, Filters, CommandHandler, MessageHandler
 import json
 import logging
 import mutagen
+from pyrogram import filters
 import os
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
